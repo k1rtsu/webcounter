@@ -1,6 +1,8 @@
 from flask import Flask, redirect, render_template
 from counter import Counter
 
+# http://localhost:5001
+
 app = Flask(__name__)
 cnt = Counter()
 
