@@ -21,3 +21,16 @@ When counter has a nonzero value and it is reset the value becomes zero
     Click Button  Paina
     Click Button  Nollaa
     Page Should Contain  nappia painettu 0 kertaa
+
+When value is set it changes correctly
+    Go To  ${HOME_URL}
+    Input Text  value  5
+    Click Button  aseta
+    Page Should Contain  nappia painettu 5 kertaa
+
+When value is set it changes correctly
+    Go To  ${HOME_URL}
+    Input Text  value  0
+    Click Button  aseta
+    Page Should Contain  nappia painettu 0 kertaa
+    
